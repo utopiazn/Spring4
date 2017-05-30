@@ -6,7 +6,7 @@ public class MavenBuildRunner implements BuildRunner {
 
 	private String mavenPath;
 	
-	@Override
+	/*@Override*/
 	public void build(List<String> srcDirs, String binDir) {
 		// TODO Auto-generated method stub
 		
