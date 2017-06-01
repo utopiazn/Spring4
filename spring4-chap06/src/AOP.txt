@@ -426,7 +426,7 @@ public class MainQuickStart2 {
 		ctx.close();
 	}
 }
-
+-----------------------------------------------------------------------------------
 4. [ArticleCacheAdvice.java]
 package net.madvirus.spring4.chap06.aop;
 
