@@ -53,6 +53,7 @@ VALUES(SEQ_TB_BOARD_IDX.NEXTVAL,'제목','내용',0,'N',SYSDATE,'Admin');
 		    <id>mesir-repo</id>
 		    <url>http://mesir.googlecode.com/svn/trunk/mavenrepo</url>
 		</repository>
+		
 		<repository>
 			<id>mvn2</id>
 			<url>http://repo1.maven.org/maven2/</url>
@@ -178,7 +179,7 @@ VALUES(SEQ_TB_BOARD_IDX.NEXTVAL,'제목','내용',0,'N',SYSDATE,'Admin');
 			<version>1.4</version>
 		</dependency>
 		
-		<!-- MySql -->
+		<!-- MySql --> 제외
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -645,7 +646,10 @@ public class CustomMapArgumentResolver implements HandlerMethodArgumentResolver{
 	}
 
 	@Override
-	public Object resolveArgument(MethodParameter parameter, ModelAndViewContainer mavContainer, NativeWebRequest webRequest, WebDataBinderFactory binderFactory) throws Exception {
+	public Object resolveArgument(MethodParameter parameter, 
+	ModelAndViewContainer mavContainer, 
+	NativeWebRequest webRequest,
+	 WebDataBinderFactory binderFactory) throws Exception {
 		CommandMap commandMap = new CommandMap();
 		
 		HttpServletRequest request = (HttpServletRequest) webRequest.getNativeRequest();
