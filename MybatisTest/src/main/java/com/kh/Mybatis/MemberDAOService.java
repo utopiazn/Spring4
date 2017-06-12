@@ -40,8 +40,8 @@ public class MemberDAOService implements MemberDAO {
 	public void updateMember(String name) {
 		// TODO Auto-generated method stub		
 		
-		MemberMapper memberMapper = sqlSession.getMapper(MemberMapper.class);
-		memberMapper.updateMember(name);
+		//MemberMapper memberMapper = sqlSession.getMapper(MemberMapper.class);
+		//memberMapper.updateMember(name);
 	}
 
 	@Override

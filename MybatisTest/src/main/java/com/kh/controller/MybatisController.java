@@ -4,7 +4,6 @@ package com.kh.controller;
 import java.util.List;
 import java.util.Locale;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
@@ -17,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.kh.Mybatis.Member;
-import com.kh.Mybatis.MemberDAO;
+
 import com.kh.Mybatis.MemberDAOService;
 
 @Controller

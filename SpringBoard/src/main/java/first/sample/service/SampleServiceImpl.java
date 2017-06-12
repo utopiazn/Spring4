@@ -8,7 +8,8 @@ import javax.annotation.Resource;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 
-import first.sample.dao.SampleDAO;
+
+import first.common.dao.SampleDAO;
 
 @Service("sampleService")
 public class SampleServiceImpl implements SampleService {
